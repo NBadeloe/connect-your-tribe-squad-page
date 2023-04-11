@@ -1,34 +1,29 @@
 {
   "name": "connect-your-tribe-squad-page",
   "version": "1.0.0",
-  "description": "Redesign met je squad een squadpagina op basis van een bestaande API.",
+  "description": "> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)",
   "main": "index.js",
-  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fdnd-task/connect-your-tribe-squad-page.git"
+    "url": "git+https://github.com/NBadeloe/connect-your-tribe-squad-page.git"
   },
-  "keywords": [
-    "node",
-    "express",
-    "ejs"
-  ],
-  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
-  "license": "GPL-3.0",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fdnd-task/connect-your-tribe-squad-page/issues"
+    "url": "https://github.com/NBadeloe/connect-your-tribe-squad-page/issues"
   },
-  "homepage": "https://github.com/fdnd-task/connect-your-tribe-squad-page#readme",
+  "homepage": "https://github.com/NBadeloe/connect-your-tribe-squad-page#readme",
   "dependencies": {
-    "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
+  },
+  "type": "module"
 }

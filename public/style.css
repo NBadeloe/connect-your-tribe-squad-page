@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: bold;
+    src: url(./fonts/MersadLight.ttf)
+}
+@font-face {
+    font-family: regular;
+    src: url(./fonts/MersadRegular.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(./fonts/MersadLight.ttf);
+}
+body {
+    background-image: url(./assets/fdndblurr.svg);
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: bold;
+    text-transform: uppercase;
+    font-size: 7em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.75em;
+    margin-bottom: 1em;
+}
+
+h2{
+    font-family: regular;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    margin: 0.5em;
+
+}
+
+h3{
+    font-family: regular;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    margin: 0.5em;
+
+}
+h2, h3, p{
+    color: whitesmoke;
+}
+
+p{
+    font-family: regular;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    margin: 0.5em;
+}
+
+img{
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+article {
+    border:1px solid chartreuse;
+  /* From https://css.glass */
+    background: rgba(5, 5, 66, 0.17);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(5, 5, 66, 0.3);
+
+    margin: 2em;
+    width: 20em;
+    height: 30em;
+
+}
+
+section{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 20em);
+    grid-template-rows: repeat(3, 30em);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    justify-content: center;
+    
+}
+
+nav{
+    font-family: bold;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    margin: 0.75em;
+    margin-bottom: 1em;
+}
+
+nav > a{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 1em;
+}

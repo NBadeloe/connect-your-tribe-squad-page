@@ -12,7 +12,10 @@
 
   
     <section>
-      <!-- Het renderen van alle studenten  -->
+      <!-- Het renderen van alle studenten
+      door het verstuurde api object(bundel van alles members)
+      een voor een te verwerken en tonen tot alle members getoond worden
+      -->
       <% squad.members.forEach(member => { %>
         <article>
           <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>

@@ -1,6 +1,7 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Squad page
+![](https://github.com/NBadeloe/connect-your-tribe-squad-page/blob/main/docs/Recording%202023-05-30%20at%2013.41.29.gif)
 Een squadpage gemaakt met node.js, ejs en express.
 
 ## Inhoudsopgave

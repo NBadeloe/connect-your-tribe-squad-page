@@ -1,36 +1,48 @@
-<%- include('./partials/head.ejs')  %>
-
+<%- include('./partials/head.ejs') %>
 
 <main>
-    <h1><%= squad.name %></h1>
+  <h1><%= squad.name %></h1>
 
-    <nav>
-      <a href="/?squad=squad-a-2022">Squad A</a>
-      <a href="/?squad=squad-b-2022">Squad B</a>
-      <a href="/?squad=squat-c-2022">Squat C</a>
-    </nav>
+  <nav>
+    <a href="/?squad=squad-a-2022">Squad A</a>
+    <a href="/?squad=squad-b-2022">Squad B</a>
+    <a href="/?squad=squat-c-2022">Squat C</a>
+  </nav>
 
-  
-    <section>
-      <!-- Het renderen van alle studenten
+  <section class="card-grid">
+    <!-- Het renderen van alle studenten
       door het verstuurde api object(bundel van alles members)
       een voor een te verwerken en tonen tot alle members getoond worden
       -->
-      <% squad.members.forEach(member => { %>
-        <article>
-          <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-          <% if (member.avatar) { %>
-          <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
-          <% }else{ %>
-          <img src="/placeholder.jpg" alt="Placeholder avatar" />
-          <% } %>
-          <h3> <%= member.nickname %></h3>
-          <a href="https://github.com/<%= member.gitHubHandle %>">Github</a>        
-        </article>
-        <% }) %>
-     
-    </section>
-  </main>
+    <% squad.members.forEach(member => { %>
+    <article>
+      <section class="card-img">
+        <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+        <h3><%= member.nickname %></h3>
+        <% if (member.avatar) { %>
+        <img
+          class="img-card"
+          src="<%= member.avatar %>"
+          alt="De avatar van <%= member.name %>"
+        />
+        <% }else{ %>
+        <img
+          class="img-card"
+          src="./assets/voorbeeld.jpeg"
+          alt="Placeholder avatar"
+        />
+        <% } %>
+      </section>
 
-  <%- include('./partials/footer.ejs') %>
-  
+      <section class="card-text">
+        <p><%= member.bio.html %></p>
+        <a href="https://github.com/<%= member.gitHubHandle %>">
+          <img src="./assets/github.svg" alt=""/>
+        </a>
+      </section>
+    </article>
+    <% }) %>
+  </section>
+</main>
+
+<%- include('./partials/footer.ejs') %>

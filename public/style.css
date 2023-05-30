@@ -29,64 +29,92 @@ h1 {
     margin: 0.75em;
     margin-bottom: 1em;
 }
-
-h2{
-    font-family: regular;
-    text-align: left;
-    display: flex;
-    justify-content: left;
-    margin: 0.5em;
-
-}
+/* cards */
 
 h3{
     font-family: regular;
     text-align: left;
-    display: flex;
-    justify-content: left;
+    justify-content: center;
+    width: 10em;
+    height: 1em;
     margin: 0.5em;
-
 }
+h2{
+    font-family: regular;
+    text-align: left;
+    justify-content: center;
+    width: 10em;
+    height: 1em;
+    margin: 0.5em; 
+}
+
 h2, h3, p{
     color: whitesmoke;
 }
 
 p{
-    font-family: regular;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    display: flex;
-    justify-content: left;
+    justify-content: right;
+    font-size: 0.7em;
+    width: 20em;
     margin: 0.5em;
 }
+.card-text{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 15em;
+    height: 15em;
+    margin-left: auto;
+    }
 
-img{
-    width: 20em;
-    height: 20em;
+.img-card{
+    width: 10em;
+    height: 10em;
     object-fit: cover;
     overflow: hidden;
+    justify-self: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5em;
+    border: 1px solof #000;
 
 }
 article {
     border:1px solid chartreuse;
   /* From https://css.glass */
     background: rgba(5, 5, 66, 0.17);
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(5, 5, 66, 0.3);
-
+    display: flex;
     margin: 2em;
-    width: 20em;
-    height: 30em;
+    width: 26em;
+    height: 16em;
+
+}
+article:nth-of-type(4n +1){
+    background-color: #66e5bf6d;
+    border: 1px solid #66e5bf;
+}
+article:nth-of-type(4n + 2){
+    background-color: #0505426d;
+    border: 1px solid #050542;
+}
+article:nth-of-type(4n +3){
+    background-color: #a675f56d;
+    border: 1px solid #a675f5;
 
 }
 
-section{
+.card-grid{
     
     display: grid;
-    grid-template-columns: repeat(3, 20em);
-    grid-template-rows: repeat(3, 30em);
+    grid-template-columns: repeat(3, 28em);
+    grid-template-rows: repeat(3, 20em);
     grid-column-gap: 2em;
     grid-row-gap: 2em;
     justify-content: center;
@@ -110,3 +138,13 @@ nav > a{
     text-decoration: none;
     margin: 1em;
 }
+
+
+
+    .card-img{
+
+    flex-direction: row;
+    justify-content: left;
+    width: 4em;
+
+    }
